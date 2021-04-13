@@ -2,6 +2,8 @@ FROM cirrusci/android-sdk:30
 
 ARG flutter_version=2.0.4
 
+USER gitpod
+
 ENV FLUTTER_HOME=${HOME}/sdks/flutter \
     FLUTTER_VERSION=$flutter_version
 ENV FLUTTER_ROOT=$FLUTTER_HOME
